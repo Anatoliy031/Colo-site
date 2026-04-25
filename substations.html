@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050a1f" />
+  <meta name="description" content="Раздел описывает исходные данные и инженерную “рамку” под ЦОД категории III на 120 стоек. Это нужно, чтобы: 1) проектировщики получили ясное ТЗ; 2) руководство видело, за" />
+  <title>Площадка и инфраструктура | ЦОД категории III на 120 стоек</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="index.html" class="brand" aria-label="На главную">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/>
+            <line x1="7" y1="7" x2="7.01" y2="7"/><line x1="7" y1="17" x2="7.01" y2="17"/>
+          </svg>
+        </span>
+        <span class="brand-text">ЦОД 120 стоек<small>филиал ПАО «Россети Юг» — «Кубаньэнерго»</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="glossary.html">Термины</a>
+        <a href="roadmap.html">Дорожная карта</a>
+        <a href="requirements.html">Требования</a>
+        <a href="substations.html" class="active">Площадка</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="business-plan.html">Бизнес-план</a>
+        <a href="investor.html">Инвестор</a>
+        <a href="risks.html">Риски</a>
+        <a href="contract.html">Договор</a>
+        <a href="templates.html">Документы</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="electric-grid" aria-hidden="true">
+      <div class="electric-line"></div><div class="electric-line"></div><div class="electric-line"></div>
+    </div>
+    <div class="crumbs"><a href="index.html">Главная</a> <span>/</span> <span>Площадка и инфраструктура</span></div>
+    <h1>Площадка и инфраструктура</h1>
+    <p>Раздел описывает исходные данные и инженерную “рамку” под ЦОД категории III на <b>120 стоек</b>.
+      Это нужно, чтобы: 1) проектировщики получили ясное ТЗ; 2) руководство видело, за что платим;
+      3) инвестор понимал, что проект реализуем и управляем по этапам.</p>
+  </header>
+
+  <main class="fade-in">
+<section class="section">
+      <h2>1) Ключевые параметры конфигурации</h2>
+      <p class="lead">
+        Проектная конфигурация принята из расчёта <b>120 стойко-мест</b> и средней полезной нагрузки <b>7 кВт на стойку</b>.
+        Общая полезная нагрузка — <b>840 кВт</b>. Эти параметры используются для компоновки, электроснабжения и охлаждения.
+      </p>
+
+      <div class="facts" aria-label="Параметры проекта">
+        <div class="fact">
+          <b>Ёмкость</b>
+          <span>120 стоек</span>
+        </div>
+        <div class="fact">
+          <b>Полезная нагрузка</b>
+          <span>840 кВт (ориентир)</span>
+        </div>
+        <div class="fact">
+          <b>Подход</b>
+          <span>категория III (резервирование ключевых систем)</span>
+        </div>
+        <div class="fact">
+          <b>Коммерческая логика</b>
+          <span>базовый пакет + опции (мощность/доступ/работы)</span>
+        </div>
+      </div>
+
+      <div class="note">
+        <div class="pill"><span class="dot"></span><b>Почему важно “7 кВт/стойка”</b></div>
+        Это управленческий ориентир для консервативной компоновки. В реальной продаже возможно:
+        часть стоек ниже (компактные узлы/телеком), часть выше (серверные стойки). Но инженерная рамка должна выдерживать
+        целевой профиль и корректно обрабатывать “пиковые” сценарии через лимиты и опции.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>2) Зонирование и компоновка</h2>
+      <p class="lead">
+        Для управляемости эксплуатации объект логически делится на зоны: машинный зал, инженерные помещения,
+        помещения контроля/безопасности, склад/временное хранение, а также маршрутные зоны для кабельных трасс.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <b>Машинный зал</b>
+          <p>Стойки, холодные/горячие коридоры (по выбранной концепции), распределение питания, контроль доступа.</p>
+        </div>
+        <div class="card">
+          <b>Электропомещения</b>
+          <p>Вводы, распределение, источники бесперебойного питания, аккумуляторы, щиты, секционирование.</p>
+        </div>
+        <div class="card">
+          <b>Охлаждение</b>
+          <p>Холодильные машины/прецизионные системы (по проекту), резервирование, автоматика, мониторинг.</p>
+        </div>
+        <div class="card">
+          <b>Безопасность и контроль</b>
+          <p>Пост/контроль доступа, видеонаблюдение, журналирование, зоны хранения ключей/пропусков.</p>
+        </div>
+      </div>
+
+      <div class="note">
+        <div class="pill"><span class="dot"></span><b>Управленческий критерий</b></div>
+        Компоновка должна позволять “безопасно обслуживать” объект: удобные маршруты, разделение потоков людей,
+        минимизация пересечений клиента с инженерными зонами, и понятный режим допуска.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>3) Электроснабжение и резервирование</h2>
+      <p class="lead">
+        Для категории III ключевой вопрос — устойчивость электроснабжения: секционирование, резервирование,
+        управляемая нагрузка и процедуры аварийной работы. Ниже приведена “логика”, которая затем закрепляется в проекте и регламентах.
+      </p>
+
+      <div class="table-wrap" role="region" aria-label="Логика электроснабжения и резервирования" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Компонент</th>
+              <th>Что требуется обеспечить</th>
+              <th>Для чего это нужно</th>
+              <th>Что проверить на стадии проекта</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Вводы питания</b></td>
+              <td>Наличие устойчивого питания и возможность резервирования по схеме, принятой проектом.</td>
+              <td>Снижает риск полного обесточивания и даёт управляемость режимов.</td>
+              <td>Доступная мощность, условия присоединения, схема резервирования.</td>
+            </tr>
+            <tr>
+              <td><b>Секционирование</b></td>
+              <td>Разделение на независимые секции/линии питания машинного зала.</td>
+              <td>Авария/работы не должны “ронять” весь зал.</td>
+              <td>Схемы распределения, селективность, переключения.</td>
+            </tr>
+            <tr>
+              <td><b>Источники бесперебойного питания</b></td>
+              <td>Поддержка нагрузки на время переходных процессов и штатных сценариев.</td>
+              <td>Защита клиентов от кратковременных провалов и переключений.</td>
+              <td>Время автономии, режимы, мониторинг, обслуживание.</td>
+            </tr>
+            <tr>
+              <td><b>Мониторинг и измерение</b></td>
+              <td>Измерение потребления, контроль лимитов, фиксация событий.</td>
+              <td>Основа для тарифа, предотвращение перегрузов и спорности.</td>
+              <td>Точки измерения, журналирование, доступ к данным.</td>
+            </tr>
+            <tr>
+              <td><b>Аварийные процедуры</b></td>
+              <td>Регламенты переключений, уведомления клиентов, фиксация инцидентов.</td>
+              <td>Снижает конфликтность и уменьшает простой.</td>
+              <td>Инструкции, роли, ответственность, порядок допуска.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note">
+        <div class="pill"><span class="dot"></span><b>Связь с тарифами</b></div>
+        Если у клиента лимит 7 кВт/стойка — это не “словами”, а измерением и правилами. Поэтому:
+        измерение и контроль лимитов — обязательный элемент инженерной инфраструктуры, а не “пожелание коммерции”.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>4) Охлаждение и микроклимат</h2>
+      <p class="lead">
+        Охлаждение — второй критический контур надёжности. Цель — обеспечить стабильный микроклимат при переменной нагрузке
+        и не допустить каскадных аварий из-за перегрева. Концепция (тип оборудования) выбирается проектированием,
+        но принцип управления должен быть одинаковым: резервирование + мониторинг + регламенты.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <b>Режимы работы</b>
+          <p>Нормальный режим, пиковые нагрузки, режимы техобслуживания, аварийный режим.</p>
+        </div>
+        <div class="card">
+          <b>Резервирование</b>
+          <p>Резервирование ключевых элементов охлаждения и автоматизированные сценарии переключений.</p>
+        </div>
+        <div class="card">
+          <b>Мониторинг</b>
+          <p>Датчики температуры/влажности, контроль зон, фиксация событий и уведомления.</p>
+        </div>
+        <div class="card">
+          <b>Правила клиента</b>
+          <p>Требования к “тепловому профилю” оборудования и ограничения на действия в машинном зале.</p>
+        </div>
+      </div>
+
+      <div class="note">
+        <div class="pill"><span class="dot"></span><b>Управленческий риск</b></div>
+        Если клиент без контроля ставит “горячее” оборудование и перегружает зону — страдают все.
+        Поэтому тепловой профиль, лимиты и правила размещения — это часть договорной конструкции.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>5) Безопасность, доступ и эксплуатация</h2>
+      <p class="lead">
+        ЦОД — объект с режимом допуска и регламентами. Чем лучше “зашита” безопасность в процессы,
+        тем меньше конфликтов и тем выше доверие инвестора и клиентов.
+      </p>
+
+      <div class="check" aria-label="Эксплуатационные контрольные точки">
+        <div class="head">
+          <b>Контрольные точки для проектировщиков и эксплуатации</b>
+          <span>что должно быть закрыто документально и технически</span>
+        </div>
+        <div class="body">
+          <div class="it">
+            <div class="box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Режим доступа</strong>
+              <span>Списки допущенных лиц, сопровождение, журналирование, правила нахождения и работ, порядок экстренного доступа.</span>
+            </div>
+          </div>
+
+          <div class="it">
+            <div class="box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Видеонаблюдение и фиксация событий</strong>
+              <span>Критические зоны, хранение записей, доступ к записям по процедуре, журнал событий.</span>
+            </div>
+          </div>
+
+          <div class="it">
+            <div class="box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Регламенты работ</strong>
+              <span>Плановые окна работ, порядок заявок, кто что делает, как фиксируется завершение работ и уведомление клиента.</span>
+            </div>
+          </div>
+
+          <div class="it">
+            <div class="box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Пожарная безопасность</strong>
+              <span>Пожарная сигнализация и сценарии реагирования, зоны, эвакуация, порядок действий персонала.</span>
+            </div>
+          </div>
+
+          <div class="it">
+            <div class="box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Граница ответственности</strong>
+              <span>Где заканчивается ответственность ЦОД и начинается ответственность клиента (по питанию, оборудованию, действиям персонала).</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note">
+        <div class="pill"><span class="dot"></span><b>Для инвестора</b></div>
+        Этот раздел важен как “доказательство управляемости”: у проекта есть не только “железо”, но и процессы.
+        Инвестор финансирует не коробку, а работающий сервис.
+      </div>
+
+      <div class="actions">
+        
+        <a class="btn secondary" href="business-plan.html" aria-label="Перейти к бизнес-плану">Далее: Бизнес-план →</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="actions" style="max-width:var(--container);margin:0 auto;padding:0 20px 60px;">
+    <a class="btn" href="requirements.html">← Требования</a>
+    <a class="btn primary" href="pricing.html" style="margin-left:auto;">Тарифы →</a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2026 филиал ПАО «Россети Юг» — «Кубаньэнерго». Концепция нетарифной услуги: центр обработки данных категории III, 120 стоек.</p>
+    </div>
+  </footer>
+
+  <button id="fab-top" class="fab" type="button" aria-label="В начало страницы" title="В начало">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
